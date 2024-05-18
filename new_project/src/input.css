@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    @apply font-bodyFont;
+  }
+  /* now our custom made font apply on the items present inside body */
+  h1,
+  h2,
+  h3 {
+    @apply font-myFont text-gray-900 font-bold text-2xl;
+  }
+  .comapnyDetailDiv {
+    @apply flex flex-col min-w-24 min-h-24 items-center justify-center bg-white rounded-xl border border-gray-200;
+  }
+  .comapnyDetailDivDesktop {
+    @apply min-w-32 min-h-32;
+  }
+  .smallScreen {
+    @apply w-12 h-12;
+  }
+  .largeScreen {
+    @apply w-16 h-16;
+  }
+  .spanInGuide {
+    @apply border border-yellow-300 bg-yellow-50 text-yellow-800 w-fit px-3 py-1 rounded-lg font-medium font-myFont;
+  }
+  .paraInGuide {
+    @apply text-lg font-light border-b border-black border-opacity-30 hover:border-opacity-80;
+  }
+  .styleingClass {
+    @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-16;
+  }
+}
