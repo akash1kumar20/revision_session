@@ -1,0 +1,204 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+}
+body {
+  background-color: rgb(82, 0, 190);
+}
+/* navbar */
+#navbar {
+  color: white;
+  background-color: black;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* box1 content */
+.navbar-logo {
+  height: 50px;
+  width: 140px;
+}
+.logo {
+  margin-top: 5%;
+  background-image: url("/Image/pngimg.com\ -\ amazon_PNG11.png");
+  background-size: cover;
+  height: 50px;
+  width: 100%;
+}
+/* for the box which have cursor: */
+.border {
+  border: 2px solid transparent;
+}
+.border:hover {
+  border: 2px solid white;
+  padding: 3px;
+}
+/* box2 content */
+.nav-address {
+  margin-left: 1%;
+}
+.address-title {
+  font-size: 0.85rem;
+  color: antiquewhite;
+  margin-left: 15px;
+}
+.address-location {
+  font-size: 1rem;
+  margin-left: 3px;
+}
+.location-icon {
+  display: flex;
+  align-items: center;
+}
+/* box3 content */
+.search-area {
+  display: flex;
+  margin-left: 5px;
+  font-size: 24px;
+}
+.category-selector {
+  background-color: rgb(191, 190, 186);
+  padding: 5px;
+  border: 1px solid rgb(191, 190, 186);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-area:hover {
+  border: 3px solid orange;
+  border-radius: 5px;
+  background-color: orange;
+}
+.typingArea {
+  width: 500px;
+  border: 1px solid white;
+}
+.search-icon {
+  background-color: rgb(207, 108, 10);
+  padding: 5px;
+  border: 1px solid rgb(207, 108, 10);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* box4 content */
+span {
+  font-size: 0.75rem;
+}
+.bottom-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+/* box5 content */
+.cart i {
+  font-size: 1.5rem;
+}
+/* panels */
+.panel {
+  height: 40px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+}
+.panel-options {
+  width: 75%;
+}
+.panel-options p {
+  display: inline;
+  font-size: 0.85rem;
+  margin-left: 15px;
+}
+.panel-deals {
+  font-weight: 700;
+}
+/* after navbar section */
+.after-navbar {
+  height: 300px;
+  background-image: url("/Image/61CiqVTRBEL._SX3000_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.change-zone-message {
+  width: 96%;
+  background-color: white;
+  color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+.change-zone-message a {
+  color: blue;
+}
+/* main content section */
+.product-section {
+  margin: 0px 20px 1px 20px;
+  background-color: rgb(82, 0, 190);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box {
+  border: 2px solid rgb(255, 255, 255);
+  width: 22.5%;
+  height: 400px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.box-image {
+  height: 300px;
+  background-size: cover;
+  margin: 1rem 0rem 0.5rem 0rem;
+  background-position-y: center;
+  background-position-x: center;
+}
+.box a {
+  color: blue;
+}
+.box1 .box-image {
+  background-image: url("/Image/photo-1535223289827-42f1e9919769.avif");
+}
+.box2 .box-image {
+  background-image: url("/Image/photo-1581235720704-06d3acfcb36f.avif");
+}
+.box3 .box-image {
+  background-image: url("/Image/photo-1503602642458-232111445657.avif");
+  background-position-y: bottom;
+}
+.box4 .box-image {
+  background-image: url("/Image/photo-1586495777744-4413f21062fa.avif");
+  background-position-y: bottom;
+}
+.box5 .box-image {
+  background-image: url("/Image/photo-1560343090-f0409e92791a.avif");
+}
+.box6 .box-image {
+  background-image: url("/Image/photo-1583947215259-38e31be8751f.avif");
+}
+.box7 .box-image {
+  background-image: url("/Image/photo-1602143407151-7111542de6e8.avif");
+  background-position-y: bottom;
+}
+.box8 .box-image {
+  background-image: url("/Image/premium_photo-1664699099206-729bf51a4740.avif");
+  background-position-y: bottom;
+}
+/* bottom of the page */
+.footer {
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+  height: 20px;
+  background-color: rgb(125, 125, 125);
+  font-size: 20px;
+}
