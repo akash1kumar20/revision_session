@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .buttonStylingSmall {
+    @apply h-10 w-20 bg-black text-xl text-white py-1 rounded-lg mr-2 mb-1 text-center ps-4 font-bold;
+  }
+  .buttonStylingLarge {
+    @apply h-20 w-40 bg-black text-xl text-white py-6 rounded-lg mr-3 mb-2 text-center ps-4 font-bold;
+  }
+  body {
+    @apply bg-slate-900;
+  }
+  .bigButton {
+    @apply h-40 w-40 bg-orange-400 text-white py-3 px-6 rounded-lg  text-5xl;
+  }
+  .bigButtoSmallScreen {
+    @apply h-20 w-20 bg-orange-400 text-white py-3 px-6 rounded-lg text-2xl;
+  }
+  .placeHolder {
+    @apply bg-black text-white text-center max-w-full h-14 pb-7 ps-6;
+  }
+}
