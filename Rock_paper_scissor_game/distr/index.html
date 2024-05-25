@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Rock Paper Scissor</title>
+  </head>
+  <body>
+    <header>
+      <div class="text-5xl pt-5 flex justify-center">
+        <h1 class="border-b-2 border-orange-500 pb-3 w-fit">
+          <img src="./images/images (2).png" class="rounded-lg shadow-2xl" />
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="mt-6">
+        <!-- button container -->
+        <div class="text-2xl text-orange-400">
+          <button onclick="rockSelection()">Rock</button>
+          <button onclick="paperSelection()">Paper</button>
+          <button onclick="scissorSelection()">Scissor</button>
+        </div>
+        <!-- selection showing container -->
+        <div
+          class="mt-8 flex border-4 border-black lg:mx-32 mx-8 justify-between"
+        >
+          <div class="border-r-4 border-black w-[50%]">
+            <h3>You</h3>
+            <div
+              id="playerSelection"
+              class="mt-5 flex justify-center pb-4 max-h-[250px]"
+            ></div>
+          </div>
+          <div class="w-[50%]">
+            <h3>Computer</h3>
+            <div
+              id="computerSelection"
+              class="mt-5 flex justify-center pb-4 max-h-[250px]"
+            ></div>
+          </div>
+        </div>
+
+        <!-- result area -->
+        <div class="hidden" id="displayResultDiv">
+          <div
+            class="mt-2 flex border-4 border-black lg:mx-32 mx-8 justify-evenly py-4 items-center"
+          >
+            <h3>Result</h3>
+            <p id="displayResult" class="text-center"></p>
+          </div>
+        </div>
+
+        <!-- score card area -->
+        <div
+          class="mt-2 flex border-4 border-black lg:mx-32 mx-8 justify-evenly"
+        >
+          <div class="text-left">
+            <h4 class="text-2xl font-semibold text-black">Score</h4>
+            <div class="flex py-2">
+              <div class="font-semibold text-lg">
+                <p>User</p>
+                <p>Computer</p>
+                <p>Tie</p>
+                <p>Total Games</p>
+              </div>
+              <div class="ms-6 font-semibold text-lg">
+                <p id="userScore"></p>
+                <p id="computerScore"></p>
+                <p id="tieScore"></p>
+                <p id="totalGames"></p>
+              </div>
+            </div>
+          </div>
+          <div class="my-auto">
+            <button
+              class="bg-yellow-500 hover:bg-red-800 hover:text-lg"
+              onclick="localStorage.clear(); location.reload()"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
