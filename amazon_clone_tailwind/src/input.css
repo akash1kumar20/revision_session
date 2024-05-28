@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .hoverEffect {
+    @apply hover:border-2 hover:border-white;
+  }
+  body {
+    @apply overflow-x-scroll min-w-[1280px] bg-pink-200;
+  }
+  .itemBox {
+    @apply bg-white shadow-xl text-black max-w-[25%] max-h-[380px] pb-3;
+  }
+  h3 {
+    @apply font-semibold text-xl ps-6 pt-2;
+  }
+  a {
+    @apply text-blue-600 ps-4 text-sm;
+  }
+  .fashionImages {
+    @apply px-4 py-2;
+  }
+}

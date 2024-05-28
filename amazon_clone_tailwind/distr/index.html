@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>TailwindCss</title>
+  </head>
+  <body>
+    <header>
+      <!-- main-navBar -->
+      <div
+        class="h-16 bg-slate-700 text-white flex justify-evenly items-center"
+      >
+        <div class="lg:h-40 lg:w-32 h-20 w-20 mt-10 lg:mt-24 pt-3">
+          <img src="./../Image/pngimg.com - amazon_PNG11.png" />
+        </div>
+        <div class="px-3 py-1 hover:hoverEffect">
+          <p class="text-sm ms-4">Deliver to</p>
+          <p class="font-bold">
+            <i class="fa-solid fa-location-dot"></i> India
+          </p>
+        </div>
+        <div class="flex h-10 w-[50%] shadow-xl">
+          <select
+            class="bg-slate-200 text-black py-2 px-2 text-sm rounded-tl-md rounded-bl-md"
+          >
+            <option>All</option>
+          </select>
+          <input
+            type="text"
+            placeholder=" Search Amazon.in"
+            class="w-[86%] pl-3"
+          />
+          <p
+            class="bg-orange-400 text-xl rounded-tr-md rounded-br-md text-black"
+          >
+            <i class="fa-solid fa-magnifying-glass p-3"></i>
+          </p>
+        </div>
+        <div class="hover:hoverEffect">
+          <p class="text-sm">Hello, sign in</p>
+          <p class="font-semibold">
+            Account & Lists
+            <span class="text-xs text-slate-500"
+              ><i class="fa-solid fa-caret-down"></i
+            ></span>
+          </p>
+        </div>
+        <div class="hover:hoverEffect">
+          <p class="text-sm">Returns</p>
+          <p class="font-semibold">& Orders</p>
+        </div>
+        <div class="hover:hoverEffect">
+          <p>
+            <i class="fa-solid fa-cart-shopping text-4xl"></i
+            ><span class="font-semibold ms-1">Cart</span>
+          </p>
+        </div>
+      </div>
+      <!-- small-navBar -->
+      <div
+        class="h-8 bg-black text-white flex items-center ps-7 font-semibold py-2"
+      >
+        <p class="hover:hoverEffect"><i class="fa-solid fa-bars"></i> All</p>
+        <p class="ms-6 me-4 hover:hoverEffect">Today's Deals</p>
+        <p class="me-4 hover:hoverEffect">Customer Service</p>
+        <p class="me-4 hover:hoverEffect">Registry</p>
+        <p class="me-4 hover:hoverEffect">Gift Cards</p>
+        <p class="hover:hoverEffect">Sell</p>
+      </div>
+    </header>
+    <main>
+      <!-- main section -->
+      <div
+        class="bg-[url('../Image/61zAjw4bqPL._SX3000_.jpg')] bg-cover min-h-96"
+      >
+        <div class="mx-6 pt-60 flex gap-6">
+          <!-- section one -->
+          <div class="itemBox">
+            <h3>Gaming Accessiores</h3>
+            <div class="grid grid-cols-2 mt-4 mb-9">
+              <div>
+                <img
+                  src="./../Image/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                />
+                <span class="ms-4 text-sm">Headsets</span>
+              </div>
+              <div>
+                <img
+                  src="./../Image/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                />
+                <span class="ms-4 text-sm">Keyboard</span>
+              </div>
+              <div>
+                <img
+                  src="./../Image/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                />
+                <span class="ms-4 text-sm">Computer Mice</span>
+              </div>
+              <div>
+                <img
+                  src="./../Image/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                />
+                <span class="ms-4 text-sm">Chairs</span>
+              </div>
+            </div>
+            <a>See more</a>
+          </div>
+          <!-- section two -->
+          <div class="itemBox">
+            <h3>Deals in PCs</h3>
+            <img
+              src="./../Image/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg"
+              class="px-3 mt-4 mb-9"
+            />
+            <a>Shop Now</a>
+          </div>
+          <!-- section three -->
+          <div class="itemBox">
+            <h3>Shop deals in Fashion</h3>
+            <div class="grid grid-cols-2 my-4">
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg"
+                />
+                <span class="text-sm">Jeans under ₹500</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                />
+                <span class="text-sm">Tops under ₹250</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                />
+                <span class="text-sm">Dresses under ₹300</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                />
+                <span class="text-sm">Shoes under ₹500</span>
+              </div>
+            </div>
+            <a>See all deals</a>
+          </div>
+          <!-- fourth section -->
+          <div class="itemBox">
+            <h3>Refresh your space</h3>
+            <div class="grid grid-cols-2 my-4">
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                />
+                <span class="text-sm">Dining</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                />
+                <span class="text-sm">Home</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                />
+                <span class="text-sm">Kitchen</span>
+              </div>
+              <div class="fashionImages">
+                <img
+                  src="./../Image/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                />
+                <span class="text-sm">Health and Beauty </span>
+              </div>
+            </div>
+            <a>See more</a>
+          </div>
+        </div>
+      </div>
+      <!-- popular item section -->
+
+      <div class="mx-6 pt-6 mt-4 bg-white text-black">
+        <h3>Popular Products</h3>
+        <div class="grid grid-cols-6 mt-3 gap-x-3">
+          <img src="./../Image/41UwJ9NihPL._AC_SY200_.jpg" class="h-[80%]" />
+          <img src="./../Image/71XeBzXVE+L._AC_SY200_.jpg" class="h-[80%]" />
+          <img src="./../Image/81TgnMVRd4L._AC_SY200_.jpg" class="h-[80%]" />
+          <img src="./../Image/61XURzmwthL._AC_SY200_.jpg" class="h-[80%]" />
+          <img src="./../Image/71HYY0ArOgL._AC_SY200_.jpg" class="h-[80%]" />
+          <img src="./../Image/61pjcwJQvVL._AC_SY200_.jpg" class="h-[80%]" />
+        </div>
+      </div>
+      <!-- other products -->
+      <div class="mx-6 pt-6 text-black flex gap-6 bg-pink-200">
+        <!-- section one -->
+        <div class="itemBox">
+          <h3>Shop activity trackers and smartwatches</h3>
+          <img
+            src="./../Image/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg "
+            class="px-9 mt-4 mb-11 max-h-[60%]"
+          />
+          <a>Shop Now</a>
+        </div>
+        <!-- section two -->
+        <div class="itemBox">
+          <h3>Gifts for every kind of dad</h3>
+          <div class="grid grid-cols-2 mt-4 mb-9">
+            <div class="fashionImages">
+              <img
+                src="./../Image/FD_2024_93_GW_DesktopQuadCard_Tech_Dad_186x116_1x._SY116_CB581184027_.jpg"
+              />
+              <span class="text-sm">Tech enthusiasts</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/FD_2024_94_GW_DesktopQuadCard_Adventure_Dad_186x116_1x._SY116_CB582858223_.jpg"
+              />
+              <span class="text-sm">Adventure seekers</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/FD_2024_95_GW_DesktopQuadCard_Hard_to_Shop_for_Dad_186x116_1x._SY116_CB582858223_.jpg"
+              />
+              <span class="text-sm">Daily rountine dads</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/FD_2024_96_GW_DesktopQuadCard_At_Home_Dad_186x116_1x._SY116_CB582858223_.jpg"
+              />
+              <span class="text-sm">Hard-to-gifts dads</span>
+            </div>
+          </div>
+          <a>See more</a>
+        </div>
+
+        <!-- section three -->
+        <div class="itemBox">
+          <h3>Gaming merchandise</h3>
+          <div class="grid grid-cols-2 mt-4 mb-9">
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_Quad_Apparel_1x._SY116_CB667159060_.jpg"
+              />
+              <span class="text-sm">Appreal</span>
+            </div>
+            <div class="fashionImages">
+              <img src="./../Image/Fuji_Quad_Hat_1x._SY116_CB667159060_.jpg" />
+              <span class="text-sm">Hats</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_BTF_Quad_Cards_1x_Action_figure._SY116_CB558654384_.jpg"
+              />
+              <span class="text-sm">Action figures</span>
+            </div>
+            <div class="fashionImages">
+              <img src="./../Image/Fuji_Quad_Mug_1x._SY116_CB667159063_.jpg" />
+              <span class="text-sm">Mugs</span>
+            </div>
+          </div>
+          <a>See all deals</a>
+        </div>
+        <!-- fourth section -->
+        <div class="itemBox">
+          <h3>Have more fun with family</h3>
+          <div class="grid grid-cols-2 mt-4 mb-9">
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_BTF_Quad_Cards_1x_Playground_sets._SY116_CB558654384_.jpg"
+              />
+              <span class="text-sm">Outdoor play sets</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_BTF_Quad_Cards_1x_STEM_toys_or_learning_toys._SY116_CB558654384_.jpg"
+              />
+              <span class="text-sm">Learning toys</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg"
+              />
+              <span class="text-sm">Action figures</span>
+            </div>
+            <div class="fashionImages">
+              <img
+                src="./../Image/Fuji_BTF_Quad_Cards_1x_Pretend_Play_Toys._SY116_CB558654384_.jpg"
+              />
+              <span class="text-sm">Pretend play toys </span>
+            </div>
+          </div>
+          <a>See more</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-slate-600 text-gray-900 text-center py-2 mt-6">
+        <p>© belongs to Amazon.in</p>
+      </div>
+    </footer>
+  </body>
+</html>
