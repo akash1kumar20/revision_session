@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>GST Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="py-4 px-8 flex justify-between items-center border border-b-red-600"
+      >
+        <div class="ms-28 md:ms-5 lg:ms-20">
+          <img src="./Images/download.jpg" class="h-10" />
+        </div>
+        <div class="md:hidden">
+          <button onclick="expandMenu()">
+            <i class="fa-solid fa-bars text-xl font-semibold"></i>
+          </button>
+        </div>
+        <!-- menu for small screen -->
+        <div
+          class="hidden fixed z-10 lg:hidden bg-gray-600 inset-0 text-black"
+          id="menu-expand"
+        >
+          <div class="h-16 flex flex-col items-end mx-5 mt-3">
+            <button class="text-white text-2xl" onclick="expandMenu()">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+          <div
+            class="bg-white text-black mx-4 rounded-xl p-6 flex flex-col gap-8 h-[85%]"
+          >
+            <div
+              class="flex gap-8 items-center justify-between hover:hoverActive2"
+            >
+              <p>Calculators</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div
+              class="flex gap-8 items-center justify-between hover:hoverActive2"
+            >
+              <p>Publications</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div
+              class="flex gap-8 items-center justify-between hover:hoverActive2"
+            >
+              <p>Software for CA</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="hover:hoverActive2">
+              <p>Blog</p>
+            </div>
+            <div class="hover:hoverActive2">
+              <p>Contact</p>
+            </div>
+            <div class="hover:hoverActive2">
+              <p>About us</p>
+            </div>
+          </div>
+        </div>
+        <!-- menu for large screen -->
+        <div
+          class="hidden md:flex md:gap-4 lg:gap-10 lg:text-lg lg:font-semibold lg:pe-14 md:font-medium md:text-sm md:pe-2 md:ms-4 md:whitespace-nowrap"
+        >
+          <p class="hover:hoverActive">
+            Calculators <i class="fa-solid fa-chevron-down"></i>
+          </p>
+          <p class="hover:hoverActive">
+            Publications <i class="fa-solid fa-chevron-down"></i>
+          </p>
+          <p class="hover:hoverActive">
+            Software for CA <i class="fa-solid fa-chevron-down"></i>
+          </p>
+          <p class="hover:hoverActive">Blog</p>
+          <p class="hover:hoverActive">Contact</p>
+          <p class="hover:hoverActive">About Us</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pt-6 lg:px-12 px-6">
+        <h1 class="text-5xl lg:text-center">Online Indian GST Calculator</h1>
+        <div class="lg:flex justify-between mt-8">
+          <div
+            class="border-2 border-slate-200 hover:border-black lg:max-h-64 lg:max-w-[30%]"
+          >
+            <img src="./Images/preview.jpg" class="h-full w-full" />
+          </div>
+          <!-- main Calculator area -->
+          <div class="lg:max-w-[40%] lg:border-b-2 border-orange-500 pb-6">
+            <div class="mt-5 flex gap-x-20 justify-evenly my-5 p-6">
+              <div class="flex flex-col justify-between h-56">
+                <div>
+                  <h5 class="font-bold">GST Rate</h5>
+                </div>
+                <div class="max-w-32 lg:max-w-52">
+                  <span class="lg:font-semibold">
+                    (Please select the rate first and then enter the amount)
+                  </span>
+                </div>
+              </div>
+              <!-- gst selector form -->
+              <form onchange="slabSelector(event)">
+                <div>
+                  <input
+                    type="radio"
+                    id=".25"
+                    name="gst"
+                    value="0.25"
+                    class="mr-1 whitespace-nowrap"
+                  />
+                  <label for=".25" class="text-xl">0.25 %</label><br />
+                  <input
+                    type="radio"
+                    id=".3"
+                    value="3"
+                    name="gst"
+                    class="mr-1"
+                  />
+                  <label for=".3" class="text-xl">3 %</label><br />
+                  <input
+                    type="radio"
+                    id=".5"
+                    value="5"
+                    name="gst"
+                    class="mr-1"
+                  />
+                  <label for=".5" class="text-xl">5 %</label><br />
+                  <input
+                    type="radio"
+                    id=".12"
+                    value="12"
+                    name="gst"
+                    class="mr-1"
+                  />
+                  <label for=".12" class="text-xl">12 %</label><br />
+                  <input
+                    type="radio"
+                    id=".18"
+                    value="18"
+                    name="gst"
+                    class="mr-1"
+                  />
+                  <label for=".18" class="text-xl">18 %</label><br />
+                  <input
+                    type="radio"
+                    id=".28"
+                    value="28"
+                    name="gst"
+                    class="mr-1"
+                  />
+                  <label for=".28" class="text-xl">28 %</label>
+                </div>
+              </form>
+            </div>
+            <div class="flex flex-col gap-3">
+              <div class="flex justify-between">
+                <h5 class="category">Amount including GST</h5>
+                <input
+                  id="excludingAmount"
+                  type="text"
+                  class="border-2 border-black hover:border-slate-500"
+                  onchange="amountGrab()"
+                />
+              </div>
+              <div class="flex justify-between">
+                <h5 class="category">Amount excluding GST</h5>
+                <input
+                  type="text"
+                  class="border-2 border-black hover:border-slate-500"
+                  id="includingAmount"
+                />
+              </div>
+              <div class="flex justify-between">
+                <h5 class="category">GST</h5>
+                <input
+                  type="text"
+                  class="border-2 border-black hover:border-slate-500"
+                  id="gst"
+                />
+              </div>
+              <div id="otherDetails" class="hidden">
+                <div class="flex justify-between" onclick="location.reload()">
+                  <button class="text-white bg-red-500 px-6 py-1">Clear</button>
+                  <div class="font-semibold text-sm flex flex-col gap-1">
+                    <p>CGST is - Rs <span id="cgst"></span></p>
+                    <p>SGCT/UTGST - RS <span id="sgst"></span></p>
+                    <p>IGST - RS <span id="igst"></span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-2 border-slate-200 hover:border-black mt-5 lg:mt-0 lg:max-h-64 lg:max-w-[30%]"
+          >
+            <img src="./Images/images.jpg" class="h-full w-full" />
+          </div>
+        </div>
+      </div>
+      <!-- extra information -->
+      <div class="flex lg:px-32 px-8 text-xl mt-8 leading-loose justify-evenly">
+        <div class="lg:w-[30%]"></div>
+        <div class="lg:w-[70%]">
+          <p>
+            This is an online Indian Goods and Service Tax Calculator which
+            gives you the amount of GST applicable on the transactions.
+          </p>
+          <p>
+            To calculate GST payable after deduction of Input tax credit use our
+            <a class="text-orange-600 hover:text-blue-700"
+              >GST Payment and Input tax credit calculator.</a
+            >
+          </p>
+          <div class="mt-3">
+            <h6 class="font-bold text-lg">How GST is Calculated?</h6>
+            <p>
+              GST can be calculated simply by multiplying the Taxable amount by
+              GST rate. If CGST & SGST/UTGST is to be applied then CGST and SGST
+              both amounts are half of the total GST amount.
+            </p>
+            <p>GST = Taxable Amount x GST Rate</p>
+            <p>
+              If you have the amount which is already including the GST then you
+              can calculate the GST excluding amount by below formula<br />
+              GST excluding amount = GST including amount/(1+ GST rate/100)
+            </p>
+            <p>
+              <b>For example:</b> GST including amount is Rs. 525 and GST rate
+              is 5%. GST excluding amount = 525/(1+5/100) = 525/1.05 = 500
+            </p>
+            <div class="mt-3">
+              <h6 class="font-bold text-lg">
+                What is the percentage of GST in India?
+              </h6>
+              <p>GST rates are as under</p>
+              <p>
+                0% (necessity items like milk, wheat flour)<br />0.25% (rough
+                diamonds)<br />3% (gold, silver etc.)<br />5%<br />12%<br />18%<br />28%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        class="mt-8 pt-16 pb-8 lg:ps-28 ps-8 bg-white border-t-4 border-slate-200 shadow-2xl lg:flex gap-8"
+      >
+        <div class="text-slate-500 mb-6 lg:mb-0">
+          <p>TaxAdda</p>
+          <div class="flex lg:flex-col">
+            <p>Email -</p>
+            <p>support@taxadda.com</p>
+          </div>
+          <div class="flex lg:flex-col">
+            <p>Mobile/WhatsApp -</p>
+            <p>+91-82396-85690</p>
+          </div>
+        </div>
+        <div class="text-orange-600">
+          <h6 class="font-semibold text-black">ABOUT</h6>
+          <p>About us</p>
+          <p>Blog</p>
+          <p>
+            Looking for CA <br />
+            Articleship
+          </p>
+        </div>
+      </div>
+      <!-- mini footer -->
+      <div class="bg-gray-700 text-slate-400 h-10 py-2 ps-10 lg:ps-32">
+        <p>© 2024 All rights reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
