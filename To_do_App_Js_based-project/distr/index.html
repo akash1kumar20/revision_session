@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>To_do App</title>
+  </head>
+  <body
+    class="bg-gradient-to-br from-black via-slate-600 to-transparent text-white"
+  >
+    <header class="text-center">
+      <h1 class="text-5xl font-semibold pt-10 mb-4">To-do Tasks</h1>
+      <p>Never miss anything important</p>
+    </header>
+    <main>
+      <div class="mt-4 rounded-lg lg:mx-20 mx-10">
+        <!-- form area -->
+        <div>
+          <form
+            class="flex md:flex-row flex-col gap-x-6 gap-y-2 text-gray-800 p-10 justify-center items-center"
+            onsubmit="taskDetails(event)"
+          >
+            <input
+              id="task"
+              name="task"
+              type="text"
+              placeholder="Add your task here..."
+              class="lg:px-8 py-1 px-4 rounded-lg text-xl"
+              required
+            />
+            <input
+              id="date"
+              name="date"
+              type="date"
+              class="px-8 py-1 rounded-lg text-slate-500 text-xl"
+            />
+            <button
+              type="submit"
+              class="bg-green-700 text-white px-16 py-2 rounded-lg"
+            >
+              Add
+            </button>
+          </form>
+        </div>
+        <!-- task display area -->
+        <div class="text-white text-2xl md:mx-24 mx-2" id="displayDiv"></div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
